@@ -1,0 +1,112 @@
+/* --- Media Queries --- */
+
+/* 1. Katta planshetlar uchun (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .nav_links {
+        gap: 20px;
+    }
+
+    .photos .container,
+    .shop .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .photos_photo, .shop_box {
+        max-width: 45%; /* Ikkitadan qator bo'lib chiqadi */
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer_first {
+        max-width: 45%;
+    }
+}
+
+/* 2. Kichik planshetlar va telefonlar uchun (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header_about {
+        height: 500px;
+    }
+
+    .header_about-title {
+        font-size: 28px;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .main_titles-title {
+        font-size: 35px;
+    }
+
+    .main_titles-text {
+        width: 90%;
+    }
+
+    .purchase-title {
+        font-size: 35px;
+    }
+
+    .footer_first {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer_first_links, .footer__form {
+        align-items: center;
+    }
+
+    .footer__links-link {
+        justify-content: center;
+    }
+}
+
+/* 3. Smartfonlar uchun (max-width: 480px) */
+@media (max-width: 480px) {
+    .nav_links {
+        display: none; /* Mobil menyu (burger) qilinmagani uchun yashirib turiladi */
+    }
+
+    .header_about-title {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    .photos_photo, .shop_box {
+        max-width: 100%; /* Bittadan to'liq qator */
+    }
+
+    .purchase {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .purchase-title {
+        font-size: 28px;
+    }
+
+    .footer__form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__form-input {
+        width: 100%;
+    }
+
+    .footer__cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
